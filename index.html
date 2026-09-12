@@ -1,0 +1,2414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Williams FnB | Premium Catering Experiences</title>
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+
+
+        /* ========================================
+           GLOBAL
+        ======================================== */
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+
+        body {
+
+            font-family: 'Montserrat', sans-serif;
+
+            background: #0b0b0b;
+
+            color: white;
+
+            overflow-x: hidden;
+
+        }
+
+
+        a {
+
+            text-decoration: none;
+
+        }
+
+
+
+        /* ========================================
+           NAVBAR
+        ======================================== */
+
+        nav {
+
+            width: 100%;
+
+            height: 80px;
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            z-index: 1000;
+
+            padding: 0 8%;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            background: rgba(7, 7, 7, 0.92);
+
+            backdrop-filter: blur(15px);
+
+            border-bottom:
+            1px solid rgba(255,255,255,0.08);
+
+        }
+
+
+        .logo {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 28px;
+
+            font-weight: 800;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        .logo span {
+
+            color: #d4af37;
+
+        }
+
+
+        nav ul {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 30px;
+
+            list-style: none;
+
+        }
+
+
+        nav ul li a {
+
+            color: white;
+
+            font-size: 13px;
+
+            font-weight: 500;
+
+            transition: 0.3s;
+
+        }
+
+
+        nav ul li a:hover {
+
+            color: #d4af37;
+
+        }
+
+
+        .nav-contact {
+
+            padding: 12px 22px;
+
+            border-radius: 30px;
+
+            background: #d4af37;
+
+            color: #111;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            transition: 0.3s;
+
+        }
+
+
+        .nav-contact:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+            0 10px 30px rgba(212,175,55,0.25);
+
+        }
+
+
+
+        /* ========================================
+           HERO
+        ======================================== */
+
+        .hero {
+
+            width: 100%;
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            padding: 120px 8% 80px;
+
+            position: relative;
+
+            background:
+
+            linear-gradient(
+                90deg,
+                rgba(0,0,0,0.90) 0%,
+                rgba(0,0,0,0.68) 42%,
+                rgba(0,0,0,0.18) 100%
+            ),
+
+            url("chinesebg.png");
+
+            background-size: cover;
+
+            background-position: center;
+
+            background-repeat: no-repeat;
+
+        }
+
+
+        .hero-content {
+
+            max-width: 760px;
+
+            position: relative;
+
+            z-index: 2;
+
+        }
+
+
+        .hero-tag {
+
+            color: #d4af37;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            letter-spacing: 4px;
+
+            margin-bottom: 22px;
+
+        }
+
+
+        .hero h1 {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 75px;
+
+            line-height: 1.08;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .hero h1 span {
+
+            color: #d4af37;
+
+        }
+
+
+        .hero-description {
+
+            max-width: 650px;
+
+            color: #dfdfdf;
+
+            font-size: 16px;
+
+            line-height: 1.8;
+
+            margin-bottom: 35px;
+
+        }
+
+
+        .hero-buttons {
+
+            display: flex;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .primary-btn {
+
+            display: inline-block;
+
+            padding: 15px 30px;
+
+            border-radius: 30px;
+
+            background: #d4af37;
+
+            color: #111;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            transition: 0.3s;
+
+        }
+
+
+        .primary-btn:hover {
+
+            transform: translateY(-4px);
+
+            box-shadow:
+            0 12px 35px rgba(212,175,55,0.35);
+
+        }
+
+
+        .outline-btn {
+
+            display: inline-block;
+
+            padding: 14px 28px;
+
+            border-radius: 30px;
+
+            border: 1px solid rgba(255,255,255,0.8);
+
+            color: white;
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            transition: 0.3s;
+
+        }
+
+
+        .outline-btn:hover {
+
+            background: white;
+
+            color: black;
+
+        }
+
+
+
+        /* ========================================
+           GENERAL SECTIONS
+        ======================================== */
+
+        section {
+
+            padding: 100px 8%;
+
+        }
+
+
+        .section-tag {
+
+            color: #d4af37;
+
+            font-size: 12px;
+
+            letter-spacing: 3px;
+
+            font-weight: 700;
+
+            margin-bottom: 12px;
+
+        }
+
+
+        .section-title {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 48px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .section-text {
+
+            max-width: 800px;
+
+            color: #aaa;
+
+            line-height: 1.85;
+
+            font-size: 15px;
+
+        }
+
+
+
+        /* ========================================
+           ABOUT
+        ======================================== */
+
+        .about {
+
+            background: #121212;
+
+        }
+
+
+        .about-container {
+
+            display: grid;
+
+            grid-template-columns:
+            minmax(0,1fr)
+            minmax(0,1fr);
+
+            gap: 70px;
+
+            align-items: center;
+
+        }
+
+
+        .about-image {
+
+            position: relative;
+
+        }
+
+
+        .about-image img {
+
+            width: 100%;
+
+            height: 520px;
+
+            object-fit: cover;
+
+            border-radius: 18px;
+
+        }
+
+
+        .experience-badge {
+
+            position: absolute;
+
+            right: -25px;
+
+            bottom: 35px;
+
+            width: 155px;
+
+            height: 155px;
+
+            border-radius: 50%;
+
+            background: #d4af37;
+
+            color: #111;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            box-shadow:
+            0 20px 50px rgba(0,0,0,0.4);
+
+        }
+
+
+        .experience-badge strong {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 40px;
+
+            line-height: 1;
+
+        }
+
+
+        .experience-badge span {
+
+            width: 90px;
+
+            font-size: 11px;
+
+            font-weight: 700;
+
+            line-height: 1.3;
+
+            margin-top: 7px;
+
+        }
+
+
+        .stats {
+
+            margin-top: 38px;
+
+            display: flex;
+
+            gap: 40px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .stat h3 {
+
+            color: #d4af37;
+
+            font-size: 31px;
+
+            margin-bottom: 5px;
+
+        }
+
+
+        .stat p {
+
+            color: #999;
+
+            font-size: 12px;
+
+        }
+
+
+
+        /* ========================================
+           BRANDS
+        ======================================== */
+
+        .brands {
+
+            background: #0b0b0b;
+
+        }
+
+
+        .brand-grid {
+
+            display: grid;
+
+            grid-template-columns:
+            repeat(3, 1fr);
+
+            gap: 26px;
+
+            margin-top: 50px;
+
+        }
+
+
+        .brand-card {
+
+            background: #161616;
+
+            border-radius: 18px;
+
+            overflow: hidden;
+
+            border:
+            1px solid rgba(255,255,255,0.08);
+
+            transition: 0.4s;
+
+        }
+
+
+        .brand-card:hover {
+
+            transform: translateY(-10px);
+
+            border-color:
+            rgba(212,175,55,0.7);
+
+            box-shadow:
+            0 20px 55px rgba(0,0,0,0.5);
+
+        }
+
+
+        .brand-logo {
+
+            width: 100%;
+
+            height: 300px;
+
+            background: white;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 24px;
+
+        }
+
+
+        .brand-logo img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: contain;
+
+            transition: 0.4s;
+
+        }
+
+
+        .brand-card:hover .brand-logo img {
+
+            transform: scale(1.06);
+
+        }
+
+
+        .brand-content {
+
+            padding: 30px;
+
+        }
+
+
+        .brand-content h3 {
+
+            font-family:
+            'Playfair Display', serif;
+
+            font-size: 30px;
+
+            margin-bottom: 14px;
+
+        }
+
+
+        .brand-content p {
+
+            min-height: 75px;
+
+            color: #aaa;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .instagram-btn {
+
+            display: inline-block;
+
+            padding: 12px 22px;
+
+            border-radius: 25px;
+
+            background: #d4af37;
+
+            color: #111;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            transition: 0.3s;
+
+        }
+
+
+        .instagram-btn:hover {
+
+            transform: translateY(-3px);
+
+        }
+
+
+
+        /* ========================================
+           SERVICES
+        ======================================== */
+
+        .services {
+
+            background: #121212;
+
+        }
+
+
+        .service-grid {
+
+            display: grid;
+
+            grid-template-columns:
+            repeat(3, 1fr);
+
+            gap: 25px;
+
+            margin-top: 50px;
+
+        }
+
+
+        .service-card {
+
+            min-height: 245px;
+
+            padding: 38px 30px;
+
+            background: #191919;
+
+            border-radius: 15px;
+
+            border:
+            1px solid rgba(255,255,255,0.07);
+
+            transition: 0.3s;
+
+        }
+
+
+        .service-card:hover {
+
+            transform: translateY(-8px);
+
+            border-color:
+            #d4af37;
+
+        }
+
+
+        .service-icon {
+
+            font-size: 43px;
+
+            margin-bottom: 21px;
+
+        }
+
+
+        .service-card h3 {
+
+            font-size: 21px;
+
+            margin-bottom: 12px;
+
+        }
+
+
+        .service-card p {
+
+            color: #aaa;
+
+            line-height: 1.7;
+
+            font-size: 14px;
+
+        }
+
+
+
+        /* ========================================
+           EXPERIENCE
+        ======================================== */
+
+        .experience {
+
+            position: relative;
+
+            text-align: center;
+
+            background:
+
+            linear-gradient(
+                rgba(4,4,4,0.86),
+                rgba(4,4,4,0.92)
+            ),
+
+            url("chinesebg.png");
+
+            background-size: cover;
+
+            background-position: center 72%;
+
+            background-attachment: fixed;
+
+        }
+
+
+        .experience-box {
+
+            max-width: 850px;
+
+            margin: auto;
+
+        }
+
+
+        .experience-number {
+
+            font-family:
+            'Playfair Display', serif;
+
+            font-size: 105px;
+
+            line-height: 1;
+
+            color: #d4af37;
+
+        }
+
+
+        .experience h2 {
+
+            font-family:
+            'Playfair Display', serif;
+
+            font-size: 47px;
+
+            margin: 10px 0 20px;
+
+        }
+
+
+        .experience p {
+
+            max-width: 680px;
+
+            margin: auto;
+
+            color: #ddd;
+
+            line-height: 1.8;
+
+            font-size: 15px;
+
+        }
+
+
+
+        /* ========================================
+           GALLERY
+        ======================================== */
+
+        .gallery {
+
+            background: #0b0b0b;
+
+        }
+
+
+        .gallery-grid {
+
+            display: grid;
+
+            grid-template-columns:
+            repeat(3, 1fr);
+
+            gap: 18px;
+
+            margin-top: 48px;
+
+        }
+
+
+        .gallery-item {
+
+            height: 300px;
+
+            overflow: hidden;
+
+            border-radius: 14px;
+
+        }
+
+
+        .gallery-item img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: 0.5s;
+
+        }
+
+
+        .gallery-item:hover img {
+
+            transform: scale(1.08);
+
+        }
+
+
+
+        /* ========================================
+           CONTACT
+        ======================================== */
+
+        .contact {
+
+            background: #121212;
+
+        }
+
+
+        .contact-box {
+
+            max-width: 900px;
+
+            margin: auto;
+
+            text-align: center;
+
+            padding: 65px 35px;
+
+            background:
+            linear-gradient(
+                145deg,
+                #191919,
+                #111
+            );
+
+            border-radius: 20px;
+
+            border:
+            1px solid rgba(212,175,55,0.25);
+
+        }
+
+
+        .contact-box h2 {
+
+            font-family:
+            'Playfair Display', serif;
+
+            font-size: 48px;
+
+            margin-bottom: 17px;
+
+        }
+
+
+        .contact-box .section-text {
+
+            margin: auto;
+
+        }
+
+
+        .phone {
+
+            display: block;
+
+            margin: 28px 0;
+
+            color: #d4af37;
+
+            font-size: 30px;
+
+            font-weight: 700;
+
+        }
+
+
+        .contact-buttons {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 15px;
+
+        }
+
+
+        .whatsapp-btn {
+
+            padding: 15px 29px;
+
+            border-radius: 30px;
+
+            background: #d4af37;
+
+            color: #111;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+        }
+
+
+        .call-btn {
+
+            padding: 14px 29px;
+
+            border-radius: 30px;
+
+            border: 1px solid white;
+
+            color: white;
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+        }
+
+
+
+        /* ========================================
+           FINAL SPECIAL DAY SECTION
+        ======================================== */
+
+        .special-day {
+
+            min-height: 100vh;
+
+            position: relative;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            padding: 120px 8%;
+
+            background:
+
+            linear-gradient(
+                180deg,
+                rgba(5,5,5,0.52),
+                rgba(36,3,3,0.72),
+                rgba(0,0,0,0.92)
+            ),
+
+            url("chinesebg.png");
+
+            background-size: cover;
+
+            background-position: center bottom;
+
+            background-repeat: no-repeat;
+
+        }
+
+
+        .special-day::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+
+            radial-gradient(
+                circle at center,
+                rgba(212,175,55,0.08),
+                transparent 60%
+            );
+
+        }
+
+
+        .special-content {
+
+            width: 100%;
+
+            max-width: 900px;
+
+            position: relative;
+
+            z-index: 2;
+
+        }
+
+
+        .special-small {
+
+            display: inline-block;
+
+            margin-bottom: 22px;
+
+            color: #d4af37;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            letter-spacing: 5px;
+
+        }
+
+
+        .special-day h2 {
+
+            font-family:
+            'Playfair Display', serif;
+
+            max-width: 850px;
+
+            margin: auto;
+
+            font-size: 72px;
+
+            line-height: 1.1;
+
+        }
+
+
+        .special-day h2 span {
+
+            color: #d4af37;
+
+        }
+
+
+        .special-line {
+
+            max-width: 650px;
+
+            margin: 25px auto 38px;
+
+            color: #eee;
+
+            font-family:
+            'Playfair Display', serif;
+
+            font-size: 22px;
+
+            line-height: 1.6;
+
+            font-style: italic;
+
+        }
+
+
+        .special-line span {
+
+            color: #d4af37;
+
+        }
+
+
+        .special-buttons {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .book-btn {
+
+            display: inline-block;
+
+            padding: 16px 32px;
+
+            border-radius: 40px;
+
+            background: #d4af37;
+
+            color: #111;
+
+            font-size: 14px;
+
+            font-weight: 800;
+
+            transition: 0.3s;
+
+        }
+
+
+        .book-btn:hover {
+
+            transform: translateY(-4px);
+
+            box-shadow:
+            0 15px 40px rgba(212,175,55,0.35);
+
+        }
+
+
+        .special-instagram {
+
+            display: inline-block;
+
+            padding: 15px 30px;
+
+            border-radius: 40px;
+
+            border:
+            1px solid rgba(255,255,255,0.75);
+
+            color: white;
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            backdrop-filter: blur(5px);
+
+            transition: 0.3s;
+
+        }
+
+
+        .special-instagram:hover {
+
+            background: white;
+
+            color: black;
+
+        }
+
+
+
+        /* ========================================
+           FOOTER
+        ======================================== */
+
+        footer {
+
+            padding: 28px 8%;
+
+            background: #050505;
+
+            text-align: center;
+
+            color: #777;
+
+            font-size: 12px;
+
+        }
+
+
+        footer span {
+
+            color: #d4af37;
+
+        }
+
+
+
+        /* ========================================
+           FLOATING WHATSAPP
+        ======================================== */
+
+        .floating-whatsapp {
+
+            position: fixed;
+
+            right: 25px;
+
+            bottom: 25px;
+
+            width: 62px;
+
+            height: 62px;
+
+            border-radius: 50%;
+
+            background: #d4af37;
+
+            color: #111;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 25px;
+
+            z-index: 999;
+
+            box-shadow:
+            0 10px 35px rgba(0,0,0,0.45);
+
+            transition: 0.3s;
+
+        }
+
+
+        .floating-whatsapp:hover {
+
+            transform:
+            scale(1.1)
+            rotate(-5deg);
+
+        }
+
+
+
+        /* ========================================
+           RESPONSIVE
+        ======================================== */
+
+        @media(max-width: 950px) {
+
+            nav ul {
+
+                display: none;
+
+            }
+
+            .hero h1 {
+
+                font-size: 58px;
+
+            }
+
+            .about-container {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .experience-badge {
+
+                right: 20px;
+
+            }
+
+            .brand-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .service-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .gallery-grid {
+
+                grid-template-columns:
+                repeat(2, 1fr);
+
+            }
+
+            .special-day h2 {
+
+                font-size: 58px;
+
+            }
+
+        }
+
+
+        @media(max-width: 600px) {
+
+            nav {
+
+                height: 72px;
+
+                padding: 0 5%;
+
+            }
+
+            .logo {
+
+                font-size: 21px;
+
+            }
+
+            .nav-contact {
+
+                padding: 10px 14px;
+
+                font-size: 11px;
+
+            }
+
+            .hero {
+
+                min-height: 100vh;
+
+                padding:
+                115px 6%
+                70px;
+
+                background-position:
+                58% center;
+
+            }
+
+            .hero h1 {
+
+                font-size: 43px;
+
+            }
+
+            .hero-description {
+
+                font-size: 14px;
+
+            }
+
+            section {
+
+                padding: 75px 6%;
+
+            }
+
+            .section-title {
+
+                font-size: 38px;
+
+            }
+
+            .about-image img {
+
+                height: 390px;
+
+            }
+
+            .experience-badge {
+
+                width: 125px;
+
+                height: 125px;
+
+                right: 15px;
+
+                bottom: 20px;
+
+            }
+
+            .experience-badge strong {
+
+                font-size: 32px;
+
+            }
+
+            .experience-badge span {
+
+                font-size: 9px;
+
+            }
+
+            .brand-logo {
+
+                height: 270px;
+
+            }
+
+            .experience {
+
+                background-attachment:
+                scroll;
+
+            }
+
+            .experience-number {
+
+                font-size: 77px;
+
+            }
+
+            .experience h2 {
+
+                font-size: 36px;
+
+            }
+
+            .gallery-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .gallery-item {
+
+                height: 280px;
+
+            }
+
+            .contact-box {
+
+                padding:
+                50px 20px;
+
+            }
+
+            .contact-box h2 {
+
+                font-size: 36px;
+
+            }
+
+            .phone {
+
+                font-size: 23px;
+
+            }
+
+            .special-day {
+
+                min-height: 90vh;
+
+                padding:
+                100px 6%;
+
+                background-position:
+                60% bottom;
+
+            }
+
+            .special-day h2 {
+
+                font-size: 44px;
+
+            }
+
+            .special-line {
+
+                font-size: 18px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<nav>
+
+    <div class="logo">
+
+        WILLIAMS <span>FnB</span>
+
+    </div>
+
+
+    <ul>
+
+        <li>
+            <a href="#home">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="#about">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="#brands">
+                Our Brands
+            </a>
+        </li>
+
+        <li>
+            <a href="#services">
+                Services
+            </a>
+        </li>
+
+        <li>
+            <a href="#gallery">
+                Gallery
+            </a>
+        </li>
+
+    </ul>
+
+
+    <a
+        href="#special-day"
+        class="nav-contact">
+
+        Contact Us
+
+    </a>
+
+</nav>
+
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section
+    class="hero"
+    id="home">
+
+    <div class="hero-content">
+
+        <p class="hero-tag">
+
+            PREMIUM FOOD & CATERING EXPERIENCE
+
+        </p>
+
+
+        <h1>
+
+            Creating
+
+            <span>
+                Unforgettable
+            </span>
+
+            Food Experiences
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            Welcome to Williams FnB —
+            bringing together exciting food concepts,
+            premium catering experiences and memorable
+            flavours through Juice Lab, Chai Lab and
+            Pizza Lab.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#brands"
+                class="primary-btn">
+
+                Explore Our Brands
+
+            </a>
+
+
+            <a
+                href="#about"
+                class="outline-btn">
+
+                Discover Our Story
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     ABOUT
+========================================= -->
+
+<section
+    class="about"
+    id="about">
+
+    <div class="about-container">
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1100&q=90"
+                alt="Williams FnB Catering">
+
+            <div class="experience-badge">
+
+                <strong>
+                    15+
+                </strong>
+
+                <span>
+                    YEARS OF EXPERIENCE
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <p class="section-tag">
+
+                ABOUT WILLIAMS FNB
+
+            </p>
+
+
+            <h2 class="section-title">
+
+                More Than Food.
+                We Create Experiences.
+
+            </h2>
+
+
+            <p class="section-text">
+
+                Williams FnB creates memorable food
+                experiences through innovative concepts,
+                quality service and professional catering
+                solutions.
+
+                <br><br>
+
+                With more than 15 years of experience,
+                we combine flavour, creativity and premium
+                presentation to make every celebration
+                feel truly special.
+
+                <br><br>
+
+                From refreshing beverages and authentic
+                chai experiences to delicious pizzas and
+                complete event catering, every detail is
+                crafted around the experience of our guests.
+
+            </p>
+
+
+            <div class="stats">
+
+                <div class="stat">
+
+                    <h3>
+                        15+
+                    </h3>
+
+                    <p>
+                        Years Experience
+                    </p>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <h3>
+                        3+
+                    </h3>
+
+                    <p>
+                        Food Brands
+                    </p>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <h3>
+                        100%
+                    </h3>
+
+                    <p>
+                        Quality Focus
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     BRANDS
+========================================= -->
+
+<section
+    class="brands"
+    id="brands">
+
+    <p class="section-tag">
+
+        OUR FOOD BRANDS
+
+    </p>
+
+
+    <h2 class="section-title">
+
+        Meet Our Brands
+
+    </h2>
+
+
+    <p class="section-text">
+
+        Three unique food concepts.
+        One commitment — creating memorable
+        flavours and premium food experiences.
+
+    </p>
+
+
+    <div class="brand-grid">
+
+
+        <!-- JUICE LAB -->
+
+        <div class="brand-card">
+
+            <div class="brand-logo">
+
+                <img
+                    src="juicelogo.jpg"
+                    alt="Juice Lab Logo">
+
+            </div>
+
+
+            <div class="brand-content">
+
+                <h3>
+                    Juice Lab
+                </h3>
+
+                <p>
+
+                    Refreshing beverages and exciting
+                    flavours created for those who love
+                    freshness, quality and great taste.
+
+                </p>
+
+                <a
+                    href="https://www.instagram.com/juicelabofficial/"
+                    target="_blank"
+                    class="instagram-btn">
+
+                    Visit Instagram →
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CHAI LAB -->
+
+        <div class="brand-card">
+
+            <div class="brand-logo">
+
+                <img
+                    src="chailogo.jpg"
+                    alt="Chai Lab Logo">
+
+            </div>
+
+
+            <div class="brand-content">
+
+                <h3>
+                    Chai Lab
+                </h3>
+
+                <p>
+
+                    Comforting chai flavours paired with
+                    conversations, celebrations and
+                    memorable moments.
+
+                </p>
+
+                <a
+                    href="https://www.instagram.com/chailabindia/"
+                    target="_blank"
+                    class="instagram-btn">
+
+                    Visit Instagram →
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PIZZA LAB -->
+
+        <div class="brand-card">
+
+            <div class="brand-logo">
+
+                <img
+                    src="pizzalogo.jpg"
+                    alt="Pizza Lab Logo">
+
+            </div>
+
+
+            <div class="brand-content">
+
+                <h3>
+                    Pizza Lab
+                </h3>
+
+                <p>
+
+                    Delicious pizzas and exciting
+                    flavours crafted to make every
+                    bite a memorable experience.
+
+                </p>
+
+                <a
+                    href="https://www.instagram.com/pizzalab.official/"
+                    target="_blank"
+                    class="instagram-btn">
+
+                    Visit Instagram →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     SERVICES
+========================================= -->
+
+<section
+    class="services"
+    id="services">
+
+    <p class="section-tag">
+
+        WHAT WE OFFER
+
+    </p>
+
+
+    <h2 class="section-title">
+
+        Premium Catering Solutions
+
+    </h2>
+
+
+    <p class="section-text">
+
+        Thoughtfully crafted food and beverage
+        experiences for celebrations, professional
+        gatherings and special occasions.
+
+    </p>
+
+
+    <div class="service-grid">
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                🎉
+            </div>
+
+            <h3>
+                Event Catering
+            </h3>
+
+            <p>
+
+                Premium food and beverage experiences
+                designed for celebrations, events and
+                memorable occasions.
+
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                🏢
+            </div>
+
+            <h3>
+                Corporate Events
+            </h3>
+
+            <p>
+
+                Professional catering solutions for
+                corporate gatherings, meetings and
+                special business events.
+
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                💍
+            </div>
+
+            <h3>
+                Private Functions
+            </h3>
+
+            <p>
+
+                From intimate gatherings to grand
+                celebrations, we create food experiences
+                your guests will remember.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     EXPERIENCE
+========================================= -->
+
+<section class="experience">
+
+    <div class="experience-box">
+
+        <div class="experience-number">
+
+            15+
+
+        </div>
+
+
+        <h2>
+
+            Years Of Experience
+
+        </h2>
+
+
+        <p>
+
+            For more than 15 years, Williams FnB
+            has been combining taste, creativity,
+            quality and thoughtful presentation
+            to create food experiences made for
+            memorable occasions.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     GALLERY
+========================================= -->
+
+<section
+    class="gallery"
+    id="gallery">
+
+    <p class="section-tag">
+
+        OUR EXPERIENCES
+
+    </p>
+
+
+    <h2 class="section-title">
+
+        A Taste Of What We Create
+
+    </h2>
+
+
+    <p class="section-text">
+
+        From premium presentation to unforgettable
+        flavours — every experience is created to
+        complement your celebration.
+
+    </p>
+
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+
+            <img
+                src="./WhatsApp Image 2026-09-04 at 1.50.40 PM (3).jpeg"
+                alt="Williams FnB Event">
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="./WhatsApp Image 2026-09-04 at 2.00.31 PM.jpeg"
+                alt="Williams FnB Catering">
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="./WhatsApp Image 2026-09-04 at 1.50.41 PM.jpeg"
+                alt="Premium Event">
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="./chaiimage.png"
+                alt="Food Experience">
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="./WhatsApp Image 2026-09-04 at 1.50.40 PM.jpeg"
+                alt="Premium Food">
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="./WhatsApp Image 2026-09-04 at 1.50.40 PM (1).jpeg"
+                alt="Pizza Lab">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CONTACT
+========================================= -->
+
+<section
+    class="contact"
+    id="contact">
+
+    <div class="contact-box">
+
+        <p class="section-tag">
+
+            GET IN TOUCH
+
+        </p>
+
+
+        <h2>
+
+            Let's Create Something Amazing
+
+        </h2>
+
+
+        <p class="section-text">
+
+            Contact Williams FnB for catering,
+            celebrations, events and premium
+            food experiences.
+
+        </p>
+
+
+        <!-- NUMBER CHANGED -->
+
+        <a
+            href="tel:+919828020973"
+            class="phone">
+
+            +91 9828020973
+
+        </a>
+
+
+        <div class="contact-buttons">
+
+            <!-- WHATSAPP NUMBER CHANGED -->
+
+            <a
+                href="https://wa.me/919828020973?text=Hello%20Williams%20FnB%2C%20I%20would%20like%20to%20know%20more%20about%20your%20catering%20services"
+                target="_blank"
+                class="whatsapp-btn">
+
+                💬 WhatsApp Us
+
+            </a>
+
+
+            <!-- CALL NUMBER CHANGED -->
+
+            <a
+                href="tel:+919828020973"
+                class="call-btn">
+
+                📞 Call Now
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     NEW FINAL SPECIAL DAY PAGE
+========================================= -->
+
+<section
+    class="special-day"
+    id="special-day">
+
+    <div class="special-content">
+
+        <span class="special-small">
+
+            MAKE YOUR MOMENT UNFORGETTABLE
+
+        </span>
+
+
+        <h2>
+
+            Book Your
+
+            <span>
+                Special Day
+            </span>
+
+            With Us
+
+        </h2>
+
+
+        <p class="special-line">
+
+            Where every
+
+            <span>
+                special moment
+            </span>
+
+            meets an unforgettable taste.
+
+        </p>
+
+
+        <div class="special-buttons">
+
+            <!-- BOOK YOUR SPECIAL DAY WHATSAPP NUMBER CHANGED -->
+
+            <a
+                href="https://wa.me/919828020973?text=Hello%20Williams%20FnB%2C%20I%20would%20like%20to%20book%20catering%20for%20my%20special%20day"
+                target="_blank"
+                class="book-btn">
+
+                Book Your Special Day
+
+            </a>
+
+
+            <!-- CALL NUMBER CHANGED -->
+
+            <a
+                href="tel:+919828020973"
+                class="special-instagram">
+
+                Call +91 9828020973
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    © 2026
+
+    <span>
+        Williams FnB
+    </span>
+
+    | Premium Food & Catering Experiences
+
+</footer>
+
+
+
+<!-- =========================================
+     FLOATING WHATSAPP
+========================================= -->
+
+<a
+    href="https://wa.me/919828020973"
+    target="_blank"
+    class="floating-whatsapp">
+
+    💬
+
+</a>
+
+
+</body>
+
+</html>
